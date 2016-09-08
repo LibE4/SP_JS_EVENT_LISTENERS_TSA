@@ -1,10 +1,9 @@
 function showArrow(event){
+	var displayEmt = document.getElementById("direction");
 	if (Math.random() < 0.5){
-		document.write("<<<==");
+		displayEmt.innerHTML = "<<<<<<<<<<";
 	} else {
-		document.write("==>>>");
+		displayEmt.innerHTML = ">>>>>>>>>>";
 	}
 }
-var bodyEmt = document.getElementById("window");
 window.addEventListener("click", showArrow);
-bodyEmt.addEventListener("click", showArrow);
